@@ -22,3 +22,4 @@ washington.csv
 
 ### Credits
 This project is a part of Udacity Programming for Data Science Nano Degree work.
+Template for the python code is provided by Udacity.
