@@ -160,19 +160,17 @@ def time_stats(df):
     # check if the dataframe has more than a single month. if it does display the most common month
     if len(df['month'].unique()) > 1:
         most_common_month = LIST_OF_MONTHS[df['month'].mode()[0] - 1]
-        print ('The month with the most travels is: ' + most_common_month)
+        print ('The month with the most travels is: {}'.format(most_common_month))
 
     # check if the dataframe has more than a single day. if it does display the most common day
     if len(df['day_of_week'].unique()) > 1:
         most_common_day = df['day_of_week'].mode()[0]
-        print ('The day of the week with the most travels is: ' +
-        most_common_day)
+        print ('The day of the week with the most travels is: {}'.format(most_common_day))
 
     # display the most common start hour
     df['hour'] = df['Start Time'].dt.hour
     most_common_start_hour = df['hour'].mode()[0]
-    print ('The hour that is most popular to start a bike ride is: ' +
-    str(most_common_start_hour))
+    print ('The hour that is most popular to start a bike ride is: {}'.format(most_common_start_hour))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
