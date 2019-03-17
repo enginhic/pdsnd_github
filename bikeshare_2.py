@@ -239,7 +239,7 @@ def user_stats(df, city):
         print('Breakdown of travels by gender is as follows:')
         print(gender_counts)
         gender_null_counts =  df['Gender'].isnull().sum()
-        print('We did not have gender information for ' + str(gender_null_counts) + ' travels')
+        print('We did not have gender information for {} travels'.format(gender_null_counts))
         print()
 
         # Display earliest, most recent, and most common year of birth
