@@ -1,15 +1,25 @@
 ### Date created
-Include the date you created this project and README file.
+This project and the README file are created on March 16, 2019.
 
 ### Project Title
-Replace the Project Title
+US Bikeshare Data Analysis
 
 ### Description
-Describe what your project is about and what it does
+This project is about the bikeshare data from three cities:
+* New York City
+* Chicago
+* Washington
+
+The project displays some statistical information on the bikeshare data from the city that the user selects.
+
+The statistical information can be displayed for a month, day of the week, or all months and all days of the week as elected by the user.
 
 ### Files used
-Include the files used
+bikeshare_2.py
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+This project is a part of Udacity Programming for Data Science Nano Degree work.
+Template for the python code is provided by Udacity.

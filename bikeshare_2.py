@@ -233,7 +233,7 @@ def user_stats(df, city):
     print(user_type_counts)
     print()
 
-    # Display counts of gender. Skip if city is washington
+    # Display counts of gender. Skip if city is washington. Washington data does not have gender information.
     if city != 'washington':
         gender_counts = df.groupby(['Gender'])['Gender'].count()
         print('Breakdown of travels by gender is as follows:')
